@@ -1,9 +1,9 @@
 package sort;
 
-public class InsertSort {
+public class InsertionSort {
     public static void main(String[] args) {
         int[] nums = {5, 3, 4, 9, 2, 4, 45, -2, 6};
-        new InsertSort().insertSort(nums);
+        new InsertionSort().insertSort(nums);
         for (int num : nums) {
             System.out.println(num);
         }

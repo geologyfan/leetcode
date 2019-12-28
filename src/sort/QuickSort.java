@@ -14,37 +14,6 @@ public class QuickSort {
         }
     }
 
-//    public int[] quickSort1(int[] nums) {
-//        helper(nums, 0, nums.length - 1);
-//        return nums;
-//    }
-
-//    public void helper(int[] nums, int start, int end) {
-//        if(start>=end)
-//            return;
-//        int high = end,low = start;
-//        int key = nums[start];
-//        while(start<end){
-//            while(nums[end]>=key&&start<end){
-//                end--;
-//            }
-//            if(start<end){
-//                nums[start++]=nums[end];
-//                nums[end] = key;
-//            }
-//            while(nums[start]<=key&&start<end){
-//                start++;
-//            }
-//            if(start<end){
-//                nums[end--] = nums[start];
-//                nums[start] = key;
-//            }
-//        }
-//        helper(nums,low,start-1);
-//        helper(nums,start+1,high);
-//
-//    }
-
     public void quickSort(int[] nums, int low, int high) {
         if (low >= high)
             return;
