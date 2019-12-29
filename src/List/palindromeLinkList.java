@@ -1,4 +1,4 @@
-package Palindrome;
+package List;
 
 
 public class palindromeLinkList {
@@ -6,16 +6,6 @@ public class palindromeLinkList {
 
 
     }
-
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            this.val = x;
-        }
-    }
-
     public boolean isPalindrome(ListNode head) {
         ListNode reverse = reverseList(head);
         while (head!=null){
