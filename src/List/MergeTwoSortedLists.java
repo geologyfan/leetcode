@@ -1,6 +1,6 @@
 package List;
 
-public class MergeTowSortedLists {
+public class MergeTwoSortedLists {
     public static void main(String[] args) {
 
     }
