@@ -1,8 +1,8 @@
 package Palindrome;
 
-public class palindromeNumber {
+public class PalindromeNumber {
     public static void main(String[] args) {
-        System.out.println(new palindromeNumber().isPalindrome_2(12121));
+        System.out.println(new Palindrome.PalindromeNumber().isPalindrome_2(12121));
     }
 
     public boolean isPalindrome(int x) {
