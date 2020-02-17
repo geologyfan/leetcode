@@ -1,6 +1,6 @@
 package DP;
 
-import org.jetbrains.annotations.NotNull;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,7 @@ public class GenerateParentheses {
 //        }
 //    }
 
-    public void backtrack(List<String> ans, @NotNull String cur, int open, int close, int max){
+    public void backtrack(List<String> ans,  String cur, int open, int close, int max){
         if(cur.length()==2*max){
             ans.add(cur);
             return;

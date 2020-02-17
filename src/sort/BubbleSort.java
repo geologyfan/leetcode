@@ -1,7 +1,7 @@
 package sort;
 
 
-import org.jetbrains.annotations.NotNull;
+//import org.jetbrains.annotations.NotNull;
 
 public class BubbleSort {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class BubbleSort {
         }
     }
 
-    public void bubbleSort(@NotNull int[] nums,int low,int high) {
+    public void bubbleSort( int[] nums,int low,int high) {
         for (int i = high; i >= low; i--) {
             for (int j = low+1; j <= i; j++) {
                 if (nums[j] < nums[j - 1]) {
