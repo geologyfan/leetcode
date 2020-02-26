@@ -14,8 +14,8 @@ public class CircleEntrance {
         head.next.next.next = new Node(4);
         head.next.next.next.next = new Node(5);
         head.next.next.next.next.next = head.next.next;
-        System.out.println(new CircleEntrance().findEntrance(head).val);
-
+//        System.out.println(new CircleEntrance().findEntrance(head).val);
+        System.out.println(4>>2);
     }
 
     public Node judgeCircle(Node head) {
