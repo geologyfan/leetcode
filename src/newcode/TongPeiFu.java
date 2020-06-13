@@ -1,6 +1,9 @@
 package newcode;
 
-import java.util.Scanner;
+import sun.misc.Unsafe;
+
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -23,9 +26,10 @@ public class TongPeiFu {
     }
 
     private static void match(String pattern, String str) {
-        pattern = pattern.replaceAll("\\*", "\\.\\*\\?");
-        pattern = "\\^" + pattern;
-        Pattern p = Pattern.compile(pattern);
+//        ConcurrentHashMap
+//        pattern = pattern.replaceAll("\\*", "\\.\\*\\?");
+//        pattern = "\\^" + pattern;
+//        Pattern p = Pattern.compile(pattern);
 //        for (int i = 0; i < str.length(); i++) {
 //            for (int j = i + 1; j <= str.length(); j++) {
 //                Matcher m = p.matcher(str.substring(i, j));
@@ -34,16 +38,16 @@ public class TongPeiFu {
 //                }
 //            }
 //        }
-        Matcher m = p.matcher(str.substring(1));
+//        Matcher m = p.matcher(str.substring(1));
 
         int i = 0;
-        while (m.find()) {
-//            while(m.find()){
-            System.out.println(m.start() + " " + (m.end() - m.start()));
-//            }
+//        while (m.find()) {
+////            while(m.find()){
+//            System.out.println(m.start() + " " + (m.end() - m.start()));
+////            }
 
         }
 
     }
 
-}
+

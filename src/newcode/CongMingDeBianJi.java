@@ -10,21 +10,23 @@ import java.util.Scanner;
 
 public class CongMingDeBianJi {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-        scanner.nextLine();
-        for (int i = 0; i < N; i++) {
-            String str = scanner.nextLine();
-            String res = fix(str);
-            System.out.println(res);
-        }
+//        Scanner scanner = new Scanner(System.in);
+//        int N = scanner.nextInt();
+//        scanner.nextLine();
+//        for (int i = 0; i < N; i++) {
+//            String str = scanner.nextLine();
+//            String res = fix(str);
+//            System.out.println(res);
+//        }
+        String str = "aaa";
+        System.out.println(fix(str));
 
 
     }
 
     private static String fix(String str) {
 
-        String res = str.replaceAll("(.)\\1+", "$1$1").replaceAll("(.)\\1(.)\\2", "$1$1$2");
+        String res = str.replaceAll("(.)\\1+", "$1").replaceAll("(.)\\1(.)\\2", "$1$1$2");
 
         return res;
     }
